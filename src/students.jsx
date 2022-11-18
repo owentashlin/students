@@ -1,13 +1,17 @@
-function Students (name, bio, scores) {
+import Scores from "./scores"
+
+function Students ({name, bio, scores}) {
+    console.log(scores)
     return (
-    <>
-       <ul>
-            <li className='name'>{name}</li>
-            <li className='bio'>{bio}</li>
-            <li className='scores'>{scores}</li>
-        </ul>
+        <>
+        <li>Name: {name}</li>
+        <li>Bio: {bio}</li>
+        {/* <li>Scores: {student.scores.map(student =>
+            <Scores score={student.score} date={student.date}/>
+        )}
+        </li>    */}
     </>   
-      )
+    )
 }
 
 export default Students

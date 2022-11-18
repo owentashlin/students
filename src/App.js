@@ -4,7 +4,7 @@ import Students from './students';
 
 function App() {
 
-const [students] = [
+const students = [
     {
       name: 'Cait Yomorta',
       bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
@@ -70,7 +70,12 @@ const [students] = [
       <h1>Students</h1>
       {students.map(student => (
         <Students 
-        />))}
+        key={student.name} 
+        name={student.name}
+        bio={student.bio}
+        scores={student.scores}
+        />
+      ))}
       <hr></hr> 
     </div>
   );
