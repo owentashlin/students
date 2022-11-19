@@ -4,7 +4,7 @@ import Students from './students';
 
 function App() {
 
-const students = [
+const [students] = useState([
     {
       name: 'Cait Yomorta',
       bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
@@ -63,11 +63,11 @@ const students = [
         }
       ]
     }
-  ]
+  ])
   
   return (
     <div className="App">
-      <h1>Students</h1>
+      <h1><em>Students</em></h1>
       {students.map(student => (
         <Students 
         key={student.name} 

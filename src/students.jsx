@@ -4,12 +4,12 @@ function Students ({name, bio, scores}) {
     console.log(scores)
     return (
         <>
-        <li>Name: {name}</li>
-        <li>Bio: {bio}</li>
-        {/* <li>Scores: {student.scores.map(student =>
-            <Scores score={student.score} date={student.date}/>
+        <p><strong>Name:</strong> {name}</p>
+        <p><strong>Bio:</strong> {bio}</p>
+        {scores.map(score =>
+            <Scores score={score.score} date={score.date}/>
         )}
-        </li>    */}
+        <hr></hr>
     </>   
     )
 }
